@@ -1,3 +1,4 @@
+/* globle */
 body {
   font-family: "Rubik", sans-serif;
   margin: 0;
@@ -5,6 +6,68 @@ body {
   position: relative;
 }
 
+small {
+  padding: 0 !important;
+}
+
+.btn {
+  font-weight: 600 !important;
+  padding: 0.4rem 2rem;
+}
+
+.btn-lg {
+  padding: 0.5rem 4rem 0.7rem 4rem !important;
+}
+
+.btn-shadow {
+  box-shadow: 0 12px 6px -6px rgba(245, 56, 56, 0.6);
+}
+
+.btn-outline-primary:hover {
+  box-shadow: 0 12px 6px -6px rgba(245, 56, 56, 0.4) !important;
+}
+
+/* globle end */
+
+/* nav */
+a.nav-link {
+  position: relative;
+  padding-bottom: 0px !important;
+}
+
+a.nav-link-underline:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+a.nav-link-underline:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+/* nav end */
+/* banner */
+.btn-lg > small {
+  font-weight: 600;
+}
+
+/* banner end */
+
+/* plan */
+.plan-list-item {
+  padding: 6px 20px !important;
+}
+
+/* plan end */
+/* swiper */
 .border {
   border-width: 2px !important;
 }
@@ -22,3 +85,13 @@ body {
 .swiper-pagination-bullet-active {
   background-color: #000;
 }
+/* swiper  */
+/* footer */
+
+.footer {
+  background: linear-gradient(to bottom, #ffffff 150px, #f8f8f8 20px);
+
+  padding: 1rem;
+}
+
+/* footer end */
